@@ -1,10 +1,10 @@
 name: 喜马拉雅极速版
 
 on:
-  schedule:
+   workflow_dispatch:
     - cron: '*/30 * * * * '
-  watch:
-    types: [started]
+ # watch:
+ #  types: [started]
 jobs:
   build:
     runs-on: ubuntu-latest
